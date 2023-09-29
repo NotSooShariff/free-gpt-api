@@ -6,23 +6,14 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 from flask_cors import CORS
-import chromedriver_binary
-import os
-
-os.environ["webdriver.chrome.driver"] = os.environ["CHROME_DRIVER_PATH"]
-
 
 app = Flask(__name__)
 CORS(app)
 
-
 def create_webdriver():
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument("--headless")
-    chrome_options.add_argument('--no-sandbox')
-    chrome_options.add_argument('--window-size=1920,1080')
     chrome_options.add_argument("--disable-gpu")
-    chrome_options.add_argument("--timeout=10")
     return webdriver.Chrome(options=chrome_options)
 
 @app.route('/chat', methods=['POST'])
@@ -74,5 +65,4 @@ def chat():
             driver.quit()
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=False)
-
+    app.run(debug=True)
