@@ -4,7 +4,7 @@
 
 This GPT-Tokenizer API is a personal side project which I developed because I was running out of GPT tokens for use in various projects via the API xD. This is based on Selenium, which allows it to make requests through a browser and provide responses in a format usable by other APIs. Please note that this project is still under development and may have limitations.
 
-## Table of Contents
+## Quick Links
 
 - [GPT-Tokenizer API](#gpt-tokenizer-api)
   - [Overview](#overview)
