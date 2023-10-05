@@ -1,15 +1,12 @@
 import requests
 
-url = "https://localhost:8000/chat"
+url = "http://localhost:5000/chat"
 
-# User input
 user_input = input("Ask AI:")
 
-# Send a POST request with an increased timeout (e.g., 30 seconds)
 data = {"user_input": user_input}
-response = requests.post(url, json=data, timeout=60)
+response = requests.post(url, json=data, timeout=30)
 
-# Handle the response as needed
 if response.status_code == 200:
     ai_response = response.json().get("AI")
     if ai_response:
