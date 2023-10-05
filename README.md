@@ -1,26 +1,26 @@
-# GPT-Tokenizer API
+# GPT-Tokenizer API 🤖
 
-## Overview
+## Overview 📜
 
-This GPT-Tokenizer API is a personal side project which I developed because I was running out of GPT tokens for use in various projects via the API xD. This is based on Selenium, which allows it to make requests through a browser and provide responses in a format usable by other APIs. Please note that this project is still under development and may have limitations.
+This GPT-Tokenizer API is a personal side project that I developed because I was running out of GPT tokens for use in various projects via the API xD. This is based on Selenium, which allows it to make requests through a browser and provide responses in a format usable by other APIs. Please note that this project is still under development and may have limitations.
 
-## Quick Links
+## Quick Links 🔗
 
-- [GPT-Tokenizer API](#gpt-tokenizer-api)
-  - [Overview](#overview)
-  - [Table of Contents](#table-of-contents)
-  - [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-    - [Installation](#installation)
-  - [Usage](#usage)
-  - [Solutions](#solutions)
-  - [Directory Structure](#directory-structure)
-  - [Contributing](#contributing)
-  - [License](#license)
 
-## Getting Started
+- [Overview](#overview)
+- [Table of Contents](#table-of-contents)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Solutions](#solutions)
+- [Directory Structure](#directory-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
-### Prerequisites
+## Getting Started 🚀
+
+### Prerequisites 📋
 
 Before running the GPT-Tokenizer API, you'll need the following prerequisites:
 
@@ -29,7 +29,7 @@ Before running the GPT-Tokenizer API, you'll need the following prerequisites:
 - Chrome WebDriver
 - Ngrok (optional, for web access)
 
-### Installation
+### Installation 💻
 
 1. Clone the repository to your local machine:
 
@@ -44,7 +44,7 @@ cd free-gpt-api
 pip install -r requirements.txt
 ```
 
-## Usage
+## Usage 🧑‍💻
 
 To run the GPT-Tokenizer API, follow these steps:
 
@@ -67,7 +67,7 @@ cd ../testcode
 python apitest.py
 ```
 
-## Solutions
+## Solutions 🛠️
 
 As mentioned earlier, due to the way Selenium works (by popping up a browser locally), containerizing this project has been challenging. However, there are a few ways to use this project:
 
@@ -75,7 +75,7 @@ As mentioned earlier, due to the way Selenium works (by popping up a browser loc
 
 2. **Local Server**: You can run the API on your local server and use it locally. This is suitable for testing and development purposes.
 
-## Directory Structure
+## Directory Structure 📁
 
 The repository is structured as follows:
 
@@ -88,14 +88,6 @@ The repository is structured as follows:
 - `Dockerfile`: Dockerfile for containerization (work in progress).
 - `requirements.txt`: List of required Python packages.
 
-## Contributing
+## Contributing 🤝
 
-Contributions to this project are welcome! Feel free to open issues, suggest improvements, or submit pull requests. Please review our [contribution guidelines](CONTRIBUTING.md) for more details.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-Enjoy using the GPT-Tokenizer API! If you encounter any issues or have suggestions for improvements, please don't hesitate to reach out.
+Contributions to this project are welcome! This project is under development and I appreciate any help. Feel free to open issues, suggest improvements, or submit pull requests. Please review our [contribution guidelines](CONTRIBUTING.md) for more details.
