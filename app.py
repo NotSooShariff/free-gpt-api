@@ -6,20 +6,19 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 from flask_cors import CORS
+import logging
 
+logging.basicConfig(level=logging.INFO)
 app = Flask(__name__)
 CORS(app)
-
-def create_webdriver():
-    chrome_options = webdriver.ChromeOptions()
-    chrome_options.add_argument("--headless")
-    chrome_options.add_argument("--disable-gpu")
-    return webdriver.Chrome(options=chrome_options)
 
 @app.route('/chat', methods=['POST'])
 def chat():
     try:
-        driver = create_webdriver()
+        chrome_options = webdriver.ChromeOptions()
+        chrome_options.add_argument("--headless")
+        chrome_options.add_argument("--disable-gpu")
+        driver = webdriver.Chrome(options=chrome_options)
         
         driver.get("https://onlinegpt.org/")
 
@@ -58,11 +57,14 @@ def chat():
                 ai_response.append(useful_text)
             
         return jsonify({"AI": ai_response})
-        
+    
+    except Exception as e:
+        logging.error(f"An error occurred: {str(e)}") 
+
     finally:
         # Ensure that the WebDriver instance is always quit, even on exceptions
         if 'driver' in locals():
             driver.quit()
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
