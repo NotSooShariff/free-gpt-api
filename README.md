@@ -91,3 +91,11 @@ The repository is structured as follows:
 ## Contributing 🤝
 
 Contributions to this project are welcome! This project is under development and I appreciate any help. Feel free to open issues, suggest improvements, or submit pull requests. Please review our [contribution guidelines](CONTRIBUTING.md) for more details.
+
+## Disclaimer ⚠️
+
+This project, [Free GPT API](https://github.com/NotSooShariff/free-gpt-api), operates by scraping data from [OnlineGPT](https://onlinegpt.org/) which allows you to use ChatGPT without signup due to it being an ad based model. While I have not found any information in their website or terms and conditions that prohibits the use of web scrapers, I want to clarify that my intention is not to infringe upon any terms or policies set by [OnlineGPT](https://onlinegpt.org/).
+
+If anyone associated with [OnlineGPT](https://onlinegpt.org/) has concerns about the usage of their website in this project, I am open to addressing those concerns promptly. Please feel free to reach out, and I will respect any request to modify or discontinue the use of web scraping on their website.
+
+I aim to maintain ethical and respectful practices in all aspects of this project and its interactions with external resources. Your feedback and concerns are important to me, and I am committed to addressing them in a responsible and cooperative manner. Thank you for your understanding and cooperation.
