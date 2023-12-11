@@ -1,8 +1,10 @@
 # GPT-Tokenizer API 🤖
 
+> ⚠️ Note - This GPT-Tokenizer API is a personal side project that I developed because I was running out of GPT tokens for use in various projects via the OpenAI API xD. But since I found a MUCH more well-maintained and better-suited repository [G4F](https://github.com/xtekky/gpt4free) , I will no longer be working on this or maintaining it.
+
 ## Overview 📜
 
-This GPT-Tokenizer API is a personal side project that I developed because I was running out of GPT tokens for use in various projects via the API xD. This is based on Selenium, which allows it to make requests through a browser and provide responses in a format usable by other APIs. Please note that this project is still under development and may have limitations.
+This is based on Selenium, which allows it to make requests through a browser and provide responses in a format usable by other APIs. Please note that this project is still under development and may have limitations.
 
 ## Quick Links 🔗
 
